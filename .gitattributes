@@ -1,0 +1,22 @@
+# Java, Gradle, YAML, XML files → normalize to LF in repo, Git handles Windows/Unix line endings
+*.java text
+*.gradle text
+*.yaml text
+*.yml text
+*.xml text
+*.properties text
+*.txt text
+*.md text
+
+# Gradle wrapper shell scripts → LF (Unix style)
+gradlew text eol=lf
+gradlew.bat text eol=crlf
+
+# Binary files → never convert
+*.jar binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.class binary
+*.exe binary
